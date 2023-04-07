@@ -4,7 +4,11 @@
       "id": 1,
       "title": "Learn Redux",
       "status": false
+    },
+    {
+      "title": "Learn React",
+      "status": false,
+      "id": 2
     }
- 
   ]
 }

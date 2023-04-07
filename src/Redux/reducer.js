@@ -46,6 +46,7 @@ const reducer=(oldState=initialState,action)=>{
           }
 
           case types.ADD_TODOS_SUCCESS:
+            const newState=[...oldState.todos,payload];
             return {
              ...oldState,
              isLoading:false,
