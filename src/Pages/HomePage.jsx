@@ -1,8 +1,12 @@
 import React from 'react'
+import Todos from '../Components/Todos'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+        <h1>HomePage</h1>
+        <Todos/>
+        </div>
   )
 }
 
