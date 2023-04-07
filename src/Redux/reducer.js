@@ -21,7 +21,9 @@ const reducer=(oldState=initialState,action)=>{
 
             case types.GET_TODOS_SUCCESS:
               return{
+
                   ...oldState,
+                  
                   isLoading:false,
                   todos:payload,
               };
