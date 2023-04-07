@@ -23,4 +23,27 @@ const getTaskSuccess=(payload)=>{
  } 
 
 
- export {getTaskRequest,getTaskSuccess,getTaskFailure}
+ 
+const addTaskRequest=()=>{
+   return {
+    type:types.ADD_TODOS_REQUEST
+   }
+} 
+
+const addTaskSuccess=(payload)=>{
+    return {
+     type:types.ADD_TODOS_SUCCESS,
+     payload
+    }
+ } 
+
+
+ const addTaskFailure=()=>{
+    return {
+     type:types.ADD_TODOS_FAILURE
+    }
+ } 
+
+
+
+ export {getTaskRequest,getTaskSuccess,getTaskFailure,addTaskRequest,addTaskSuccess,addTaskFailure }

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import axios from "axios"
 import { useDispatch, useSelector } from 'react-redux'
 import { getTaskFailure, getTaskRequest, getTaskSuccess } from '../Redux/action'
+import TodosInput from './TodosInput'
 const Todos = () => {
 
     const dispatch=useDispatch()
@@ -29,7 +30,9 @@ const Todos = () => {
   return (
     <div>
       <h3>Todos</h3>
+      <TodosInput/>
       {
+        
         todos.length>0&&todos.map(item=>{
             return <div key={item.id}> 
                 {item.title} - {item.status?"True":"False"}

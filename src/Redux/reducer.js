@@ -23,7 +23,7 @@ const reducer=(oldState=initialState,action)=>{
               return{
 
                   ...oldState,
-                  
+
                   isLoading:false,
                   todos:payload,
               };
@@ -39,7 +39,27 @@ const reducer=(oldState=initialState,action)=>{
                       isError:true,
                   };
           
-          
+          case types.ADD_TODOS_REQUEST:
+            return {
+             ...oldState,
+             isLoading:true,
+          }
+
+          case types.ADD_TODOS_SUCCESS:
+            return {
+             ...oldState,
+             isLoading:false,
+             todos:[...oldState.todos,payload]
+          }
+
+          case types.ADD_TODOS_FAILURE:
+            return {
+             ...oldState,
+             isLoading:false,
+             isError:true,
+          }
+
+
 
         default:
             return oldState
