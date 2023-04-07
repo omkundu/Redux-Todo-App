@@ -20,6 +20,7 @@ if(task){
    dispatch(addTaskRequest())
     axios.post("http://localhost:8080/todos",payload).then(r=>{
     dispatch(addTaskSuccess(r.data))
+    setTask("")
     }).catch(e=>{
     dispatch(addTaskFailure(e))
     })
