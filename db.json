@@ -6,9 +6,14 @@
       "status": false
     },
     {
-      "title": "Learn React",
+      "title": "Learn-React-Framwork",
       "status": false,
       "id": 2
+    },
+    {
+      "title": "Learn React-Javascript",
+      "status": false,
+      "id": 3
     }
   ]
 }

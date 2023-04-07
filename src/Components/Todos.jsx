@@ -7,7 +7,7 @@ const Todos = () => {
 
     const dispatch=useDispatch()
     const todos=useSelector((state)=>state.todos)
-    
+
 
     const getTask=()=>{
 
@@ -31,7 +31,7 @@ const Todos = () => {
   return (
     <div>
       <h3>Todos</h3>
-      <TodosInput/>
+      <TodosInput getTask={getTask}/>
       {
         
         todos.length>0&&todos.map(item=>{

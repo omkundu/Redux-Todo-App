@@ -46,12 +46,11 @@ const reducer=(oldState=initialState,action)=>{
           }
 
           case types.ADD_TODOS_SUCCESS:
-            const newState=[...oldState.todos,payload];
+            // const newState=[...oldState.todos,payload];
             return {
              ...oldState,
              isLoading:false,
-             todos:[...oldState.todos,payload]
-          }
+           }
 
           case types.ADD_TODOS_FAILURE:
             return {
